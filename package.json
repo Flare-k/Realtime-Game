@@ -1,0 +1,20 @@
+{
+  "name": "Realtime-Game",
+  "version": "1.0.0",
+  "description": "Realtime Game like 'Catch Mind' using Node.js & Socket.io",
+  "main": "index.js",
+  "repository": "https://github.com/Flare-k/Realtime-Game.git",
+  "author": "Flare-k <rokkyw@naver.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "socket.io": "^2.3.0"
+  },
+  "scripts": {
+    "dev:server": "nodemon --exec babel-node src/server.js"
+  }
+}

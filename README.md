@@ -4,8 +4,8 @@
 
 ## Realtime Game
 
-Node.js와 Socket.io를 사용하여 나만의 리얼타임 게임 만들어보기  
-Create your own Realtime game using node.js and socket.io.
+Node.js와 Socket.io, Gulp를 사용하여 나만의 리얼타임 게임 만들어보기  
+Create your own Realtime game using node.js and socket.io, gulp.
 
 ## Configuration
 
@@ -14,7 +14,7 @@ Create your own Realtime game using node.js and socket.io.
 ### Prerequisite
 
 - node v12.x
-- npm 6.x
+- yarn v1.x.x
 
 ### Required File
 
