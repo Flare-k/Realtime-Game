@@ -24,6 +24,32 @@ Create your own Realtime game using node.js and socket.io, gulp.
 
 ## Reference links
 
+## To Do
+
+- [x] Setting
+
+1. yarn init
+2. yarn add nodemon
+3. yarn add express
+4. yarn add socket.io
+5. server.js 파일 생성
+6. yarn add @babel/node
+7. yarn add @babel/{core,preset-env}
+8. .babelrc 파일 생성
+
+- [x] Server
+- [ ] Pug
+- [ ] Static
+- [ ] Socket IO
+
+```
+"scripts": {
+    "dev:server": "nodemon --exec babel-node src/server.js"
+  }
+```
+
+9. yarn dev:server 실행
+
 ## License
 
 [MIT License](http://khuhub.khu.ac.kr/2017110267/myYoutube/blob/master/LICENSE)
