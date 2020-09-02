@@ -38,8 +38,8 @@ Create your own Realtime game using node.js and socket.io, gulp.
 8. .babelrc 파일 생성
 
 - [x] Server
-- [ ] Pug
-- [ ] Static
+- [x] Pug
+- [x] Static
 - [ ] Socket IO
 
 ```
