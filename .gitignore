@@ -1,5 +1,6 @@
-project.txt
+/.vscode
 node_modules
+project.txt
 # Logs
 logs
 *.log
@@ -116,4 +117,3 @@ dist
 .yarn/build-state.yml
 .pnp.*
 yarn.lock
-/.vscode
