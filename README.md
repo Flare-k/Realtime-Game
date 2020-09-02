@@ -41,7 +41,7 @@ Create your own Realtime game using node.js and socket.io, gulp.
 - [x] Pug
 - [x] Static
 - [x] ESLint
-- [ ] Socket IO
+- [x] Socket IO
 
 ```
 "scripts": {
