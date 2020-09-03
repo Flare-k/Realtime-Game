@@ -28,8 +28,12 @@ const server = app.listen(PORT, handleListening);
  */
 const io = socketIO.listen(server); // http://localhost:4000/socket.io/socket.io.js로 접근 가능하다.
 
-io.on("connection", () => console.log("Somebody Connected"));
+let sockets = [];
+io.on("connection", (socket) => {
+  sockets.push(socket.id);
+});
 
+setInterval(() => console.log(sockets), 1000);
 /*
  왜 굳이 io 변수를 만들까?
  서버를 만들어서 socketIO에 전달하기 위해 server 변수를 만들었다.
@@ -40,4 +44,8 @@ io.on("connection", () => console.log("Somebody Connected"));
    그리고 둘다 이벤트를 받을 수 있다.
    이벤트에서 가장 중요한 것은 connection 이다.
    백엔드 뿐만아니라 프론트엔드에도 연결해야 한다. -> views/home.pug script(scr="/socket.io/socket.io.js")
+
+  연결된 Socket 중에 어디에서 연결되었는지 어떤 클라이언트 이벤트인지 확인할수있어야 한다. socket인자를 받는다. 
+  서버를 껐다켜도 연결은 유지되어 있다. 서버가 꺼지면 socket은 계속 연결을 요청한다
+  socket은 request 객체이다. express위에서 보내는 HTTP 요청같은 것이다.
 */
