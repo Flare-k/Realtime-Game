@@ -50,6 +50,7 @@ Create your own Realtime game using node.js and socket.io, gulp.
 ```
 
 9. yarn dev:server 실행
+10. yarn add morgan
 
 ## License
 
