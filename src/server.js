@@ -29,7 +29,7 @@ const server = app.listen(PORT, handleListening);
 const io = socketIO.listen(server); // http://localhost:4000/socket.io/socket.io.js로 접근 가능하다.
 
 io.on("connection", (socket) => {
-  socket.emit("hello"); // 연결된 socket에게 메시지를 보낸다.
+  socket.on("helloGuys", () => console.log("Client said helloGuys"));
 });
 
 /*

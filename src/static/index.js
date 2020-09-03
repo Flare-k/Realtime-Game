@@ -4,3 +4,4 @@ const socket = io("/");
 
 socket.on("hello", () => console.log("Somebody said hello"));
 // socket.on(server에서 받은 이벤트, 응답);
+socket.emit("helloGuys");
