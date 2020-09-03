@@ -28,12 +28,10 @@ const server = app.listen(PORT, handleListening);
  */
 const io = socketIO.listen(server); // http://localhost:4000/socket.io/socket.io.js로 접근 가능하다.
 
-let sockets = [];
 io.on("connection", (socket) => {
-  sockets.push(socket.id);
+  socket.emit("hello"); // 연결된 socket에게 메시지를 보낸다.
 });
 
-setInterval(() => console.log(sockets), 1000);
 /*
  왜 굳이 io 변수를 만들까?
  서버를 만들어서 socketIO에 전달하기 위해 server 변수를 만들었다.
